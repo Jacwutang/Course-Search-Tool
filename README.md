@@ -1,2 +1,2 @@
-# Sample-Portfolio
-Collection of projects both academic and personal
+# Course-Search Tool
+This project creates a simple course search tool that mirrors the one used by UC Davis students. Students have the option of entering courses by subject or by the course registration number.(CRN) The program will display the entirety of the courses offered if entered by subject, and the exact specific course if by CRN. In anycase, the CRN followed by subject followed by course number will be displayed
