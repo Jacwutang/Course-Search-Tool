@@ -1,10 +1,4 @@
-//
-//  course.c
-//  sisweb1
-//
-//  Created by Jaycee Caesar Augustus Germanicus on 8/27/15.
-//  Copyright (c) 2015 Jaycee Caesar Augustus Germanicus. All rights reserved.
-//
+
 
 #include "course.h"
 #include "vector.h"
@@ -41,9 +35,10 @@ void find_CRN(int* choice,int* count,int* crn_array, char** subject_array, char*
 }// find_CRN
 
 void find_subject(int* choice,int* count, int* crn_array, char** subject_array, char** courses_array){
-    char *subject[1];
-    int counter = 0;
     
+    char *subject[1];
+    
+    int counter = 0;
     int count2 = *count;
     
     
@@ -56,20 +51,21 @@ void find_subject(int* choice,int* count, int* crn_array, char** subject_array, 
     
         for(int i= 0; i<count2; i++){
         
-        if( strcmp(*subject,subject_array[i]) == 0)
-        {
-            printf("%d %s %s\n", crn_array[i],subject_array[i],courses_array[i] );
-            counter ++;
-        }
+            if( strcmp(*subject,subject_array[i]) == 0)
+            {
+                printf("%d %s %s\n", crn_array[i],subject_array[i],courses_array[i] );
+                counter ++;
+            }
         
-        }
+        } // for loop
 
 
     if(counter == 0 && *choice ==2)
         printf("No courses were found for %s.\n", *subject);
 
 
-}
+} // find_subject()
+
 void read_courses(int* count,int** crn_array,char*** subject_array, char*** courses_array) {
     
     char line[256]; char* ptr;
@@ -114,11 +110,11 @@ void read_courses(int* count,int** crn_array,char*** subject_array, char*** cour
         
         (*count)++;
         
-        }
+        } // if
     
-    }
+    } // while
     
-}
+} // read_courses 
 
 
 
