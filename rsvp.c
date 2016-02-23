@@ -1,10 +1,4 @@
-//
-//  main.c
-//  sisweb1
-//
-//  Created by Jaycee Caesar Augustus Germanicus on 8/27/15.
-//  Copyright (c) 2015 Jaycee Caesar Augustus Germanicus. All rights reserved.
-//
+
 
 #include <stdio.h>
 #include "course.h"
